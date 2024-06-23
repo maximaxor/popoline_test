@@ -1,7 +1,7 @@
 pipeline{
     agent{
         kubernetes{
-            yamlFile 'build-pod.yaml'
+            yamlFile 'Build-pod.yaml'
             defaultContainer 'ez-docker-helm-build'
         }
     }
@@ -9,7 +9,7 @@ pipeline{
     environment{
         DOCKER_IMAGE = 'winterzone2/jenkins-test'
         GITHUB_API_URL = 'https://api.github.com'
-        GITHUB_REPO = 'DaryAkerman/jenkins-test'
+        GITHUB_REPO = 'maximaxor/popoline_test'
         GITHUB_TOKEN = credentials('github-creds')
     }
 
