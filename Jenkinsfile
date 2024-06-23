@@ -7,7 +7,7 @@ pipeline{
     }
 
     environment{
-        DOCKER_IMAGE = 'maximusmaxi / jenkinstest'
+        DOCKER_IMAGE = 'maximusmaxi/jenkinstest'
         GITHUB_API_URL = 'https://api.github.com'
         GITHUB_REPO = 'maximaxor/popoline_test'
         GITHUB_TOKEN = credentials('github-creds')
